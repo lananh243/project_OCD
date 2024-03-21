@@ -2,7 +2,5 @@ table{
     margin: auto;
 }
 .text{
-    display: flex;
-    justify-content: center;
-    margin-left: 680px;
+    padding-left: 590px;
 }

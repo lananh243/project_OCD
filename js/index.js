@@ -1,58 +1,58 @@
 // let products = [
 //     {
 //         id: 1,
-//         name: "Đầm Nhung Dáng Xoè Đính Cúc Tay Dài Viền Bèo, Váy Thiết Kế Dự Tiệc Sang Chảnh",
-//         price: "₫149.900",
+//         name: "Đầm Nhung Dáng Xoè Đính Cúc Tay Dài Viền Bèo",
+//         price: "149.900",
 //         sold: "12,4k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ls26twfutvvdf8"
 
 //     },
 //     {
 //         id: 2,
-//         name: "Set Áo Dài Cách Tân Tay Loe Chất Liệu Nhung Đỏ Kèm Quần Trắng, Set Áo Dài Mặc Tết Sang Chảnh",
-//         price: "₫149.900",
+//         name: "Set Áo Dài Cách Tân",
+//         price: "149.900",
 //         sold: "7,2k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lomow3jq0emj72",
 //     },
 //     {
 //         id: 3,
-//         name: "Set áo dạ nơ cổ phối chân váy cách điệu 2 lớp có kèm dây thắt lưng phong cách tiểu thư nữ tính",
-//         price: "₫500.000",
+//         name: "Set áo dạ nơ cổ phối chân váy cách điệu ",
+//         price: "500.000",
 //         sold: "18,2k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lom0qbj99tpz7a",
 //     },
 //     {
 //         id:4,
-//         name: "Váy nữ thiết kế MAKKA váy đen dáng xòe thiết kế tay phối kem 5001",
-//         price: "₫326.000",
+//         name: "Váy nữ thiết kế MAKKA",
+//         price: "326.000",
 //         sold: "1,2k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqzpxuydmd38d4",
 //     },
 //     {
 //         id: 5,
-//         name: "(CÓ SẴN) SET 3 ÁO GILE HOA + SƠ MI + CHÂN VÁY TENNIS SIÊU KUTE",
-//         price: "₫399.000",
+//         name: "SET 3 ÁO GILE HOA + SƠ MI + CHÂN VÁY TENNIS SIÊU KUTE",
+//         price: "399.000",
 //         sold: "2,1k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lq90njd8kno280",
 //     },
 //     {
 //         id: 6,
-//         name: "Đầm Cúp Tay Phồng Von Kiến Đính Kim Sa Dáng Xoè Cực Xinh",
-//         price: "₫143.660",
+//         name: "Đầm Cúp Tay Phồng Von",
+//         price: "143.660",
 //         sold: "6,3k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lk32kxbtc62c2c",
 //     },
 //     {
 //         id: 7,
-//         name: "Set Bộ Đồ Nữ Adidass Áo Dài Tay Phối Bo Dệt Gấu Sọc Vai Mix Quần Sooc Đùi Freesize",
-//         price: "₫189.000",
+//         name: "Set Bộ Đồ Nữ Adidass",
+//         price: "189.000",
 //         sold: "1,9k",
 //         image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lo97ydbdg4gba5",
 //     },
 //     {
 //         id: 8,
-//         name: "🔥HOT🔥Thú Nhồi Bông Hình Chú Mèo Dễ Thương（Mua mẫu 50cm, tặng mặt dây chuyền）",
-//         price: "₫83.500",
+//         name: "🔥HOT🔥Thú Nhồi Bông Hình Chú Mèo Dễ Thương",
+//         price: "83.500",
 //         sold: "1,2k",
 //         image: "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lq097mlgk6d160",
 //     }
@@ -70,7 +70,7 @@ function renderProduct() {
     for (let i = 0; i < products.length; i++) {
         element +=
             `
-                    <div class="product__item">
+                    <div class="product__item" onclick="detail" id="">
                         <div class="image">
                             <img src="${products[i].image}" alt="">
                         </div>
@@ -162,3 +162,8 @@ function showQuantityCart() {
     }
 }
 showQuantityCart();
+function detail(){
+    for( let i = 0 ; i<products.length; i++){
+
+    }
+}

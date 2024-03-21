@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.products{
+    width: 1300px;
+    height: 800px;
+    border: 1px solid beige;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto
+}
+.picture{
+    width: 450px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 50px
+}
+.internet{
+    display: flex;
+    padding-left: 80px;
+    gap: 120px;
+    margin-top: 20px;
+}
+.socialMedia{
+    font-size: 20px;
+}
