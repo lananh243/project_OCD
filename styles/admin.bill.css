@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.include{
+    display: inline-flex;
+}
+.big{
+    display: inline-flex;
+}
+.manager{
+    width: 250px;
+    height: 700px;
+    background-color: blueviolet;
+}
+.picture{
+    width: 250px;
+    height: 130px;
+}
+.user{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}   
+.product{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-items: center;
+    margin-top: 20px;
+} 
+.bill{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.user:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.product:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.bill:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.houseware{
+    width: 1230px;
+    height: 700px;
+    background-color: white;
+    border: 1px solid white;
+}
+.listProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cornflowerblue;
+    gap: 10px;
+    font-size: 20px;
+}
+.select{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+.option{
+    width: 170px;
+}
+.choice{
+    background-color: aqua;
+    color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.book{
+    display: inline-flex;
+    gap: 10px;
+}
+.sit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navba{
+    width: 1240px;
+    height: 50px;
+    background-color: lightcyan;
+    display: inline-flex;
+    gap: 600px;
+    padding-left: 50px;
+    margin-top:  30px;
+}
+table{
+    width: 1020px;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+th,td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+.money{
+    background-color: deepskyblue;
+    border: 1px;
+    color: white;
+}
+.green{
+    background-color: darkolivegreen;
+    border: 1px;
+    color: white;
+}
+.red{
+    background-color: red;
+    border: 1px;
+    color: white;
+}
+.orange{
+    background-color: orangered;
+    border: 1px;
+}
+a{
+    text-decoration: none;
+}
+.comeBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}

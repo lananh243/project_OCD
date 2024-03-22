@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="../styles/admin.bill.css" />
+  </head>
+  <body>
+    <div class="include">
+      <div class="manager">
+        <img
+          class="picture"
+          src="../assets/images/55-removebg-preview.png"
+          alt=""
+        />
+        <div class="user">
+          <span class="material-symbols-outlined"> list </span>
+          <b><a href="../pages/admin.user.html"></a> Quản Lí Người Dùng</b>
+        </div>
+        <div class="product">
+          <span class="material-symbols-outlined"> list </span>
+          <a href="../pages/admin.product.html"><b>Quản Lí Sản Phẩm</b></a>
+        </div>
+        <div class="bill">
+          <span class="material-symbols-outlined"> list </span>
+          <b>Quản Lí Hóa Đơn</b>
+        </div>
+      </div>
+      <div class="houseware">
+        <div class="listProduct">
+          <span class="material-symbols-outlined"> list </span>
+          <b>Quản Lí Hóa Đơn</b>
+        </div>
+        <div class="navba">
+          <div class="sit">
+            <b>Đơn hàng</b>
+            <input type="radio" />Tất cả <input type="radio" />Đặt hàng
+          </div>
+          <div class="book">
+            <button class="icon">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              Đặt hàng
+            </button>
+            <button class="icon">
+              <span class="material-symbols-outlined">dvr</span>Bán hàng
+            </button>
+            <button class="icon">
+              <span class="material-symbols-outlined"
+                >vertical_align_bottom</span
+              >Xuất Excel
+            </button>
+          </div>
+        </div>
+        <div class="select">
+          <input type="date" />
+          <input type="text" placeholder="Mã đơn" />
+          <input type="text" placeholder="Trạng thái đơn hàng" />
+          <input type="text" placeholder="Nguồn đơn hàng" />
+          <input type="text" placeholder="SĐT khách hàng" />
+          <button class="choice">Tìm kiếm</button>
+        </div>
+        <button class="comeBack">
+            <span class="material-symbols-outlined"> arrow_back </span>
+            <a href="../pages/admin.home.html"><b>Quay lại</b></a>
+        </button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã Đơn đặt hàng</th>
+                    <th>Khách hàng</th>
+                    <th>Ngày lập</th>
+                    <th>Ngày giao</th>
+                    <th>Nơi giao</th>
+                    <th>Hình thức thanh toán</th>
+                    <th>Thành tiền</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td><b>Hoàng Minh Quang</b> <p>(0915659223)</p></td>
+                    <td>23/2/2024 04:48:59</td>
+                    <td>20/3/2024 02:34:59</td>
+                    <td>Hà Nội</td>
+                    <td><button class="money">Tiền mặt</button></td>
+                    <td>189.000 VND</td>
+                    <td><button class="green">Đã giao hàng</button></td>
+                    <td><button class="green">In hóa đơn</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><b>Nguyễn Bích Phượng</b><p>(0956376457)</p></td>
+                    <td>12/1/2024 03:30</td>
+                    <td>22/1/2024 04:45</td>
+                    <td>Nha Trang</td>
+                    <td><button class="money">Ship COD</button></td>
+                    <td>345.000 VND</td>
+                    <td><button class="green">Đã giao hàng</button></td>
+                    <td><button class="green">In hóa đơn</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><b>Phan Nguyên Hạ</b><p>(0466764743)</p></td>
+                    <td>2/2/2024 05:16</td>
+                    <td>4/3/2024 07:23</td>
+                    <td>Hà Nội</td>
+                    <td><button class="money">Chuyển khoản</button></td>
+                    <td>567.000 VND</td>
+                    <td><button class="red">Chưa xử lí</button></td>
+                    <td>
+                        <button class="orange">Sửa</button>
+                        <button class="red">Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

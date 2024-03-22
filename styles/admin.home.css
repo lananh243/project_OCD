@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.include{
+    display: inline-flex;
+}
+.big{
+    display: inline-flex;
+}
+.manager{
+    width: 250px;
+    height: 700px;
+    background-color: blueviolet;
+}
+.picture{
+    width: 250px;
+    height: 130px;
+}
+.user{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}   
+.product{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-items: center;
+    margin-top: 20px;
+} 
+.bill{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.user:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.product:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.bill:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}

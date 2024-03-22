@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.big{
+    display: inline-flex;
+}
+.manager{
+    width: 250px;
+    height: 700px;
+    background-color: blueviolet;
+}
+.picture{
+    width: 250px;
+    height: 130px;
+}
+.user{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}   
+.product{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-items: center;
+    margin-top: 20px;
+} 
+.bill{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.user:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.product:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.bill:hover{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.home{
+    width: 1230px;
+    height: 700px;
+    background-color: white;
+    border: 1px solid white;
+}
+.listUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cornflowerblue;
+    gap: 10px;
+    font-size: 20px;
+}
+.navba{
+    display: inline-flex;
+    gap: 5px;
+    margin-top: 40px;
+    padding-left: 30px;
+    width: 1230px;
+    height: 50px;
+    background-color: lightcyan;
+    align-items: center;
+}
+.but{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.club{
+    display: flex;
+    gap: 50px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+.input{
+    width: 300px;
+}
+.clubBottom{
+    display: flex;
+    gap: 50px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.border{
+    display: flex;
+    gap: 30px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid blueviolet;
+}
+.new{
+    background-color: orange;   
+    color: white;
+    border: 1px solid orange;
+}
+table{
+    width: 1020px;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+th,td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+.online{
+    background-color: chartreuse;
+    border: 1px solid chartreuse;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
