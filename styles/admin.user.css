@@ -126,8 +126,13 @@ th,td{
     text-align: center;
 }
 .online{
-    background-color: chartreuse;
-    border: 1px solid chartreuse;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+}
+.close{
+    background-color: red;
+    border: 1px solid red;
     color: white;
 }
 a{

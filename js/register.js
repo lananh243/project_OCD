@@ -7,6 +7,7 @@ function signUp(e) {
     let email = document.getElementById("inpEmail").value;
     let password = document.getElementById("inpPassword").value;
     let check = document.getElementById("check-box").checked;
+    // let status = document.getElementById("status").value;
     let obj = {
         id: Math.floor(Math.random() * 10000000),
         firstName: `${firstName}`,
@@ -14,6 +15,7 @@ function signUp(e) {
         emailAddress: `${email}`,
         password: `${password}`,
         receive: `${check}`,
+        // status: `${boolean}`,
         cart: []
     }
     let flag = true;

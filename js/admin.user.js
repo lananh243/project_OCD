@@ -5,20 +5,23 @@ function renderUser() {
 
   // bien de luu tru tung hang cua bang users
   let htmlString = "";
-  
+
   for (let i = 0; i < users.length; i++) {
     htmlString += `
         <tr>
             <td>${i + 1}</td>
             <td>${users[i].id}</td>
-            <td>${users[i].firstName + users[i].lastname}</td>
+            <td>${users[i].lastName + "&nbsp" + users[i].firstName}</td>
             
             <td>${users[i].emailAddress}</td>
-           
-            <td><button class="online">${
-              users[i].receive == "true" ? "Dang hoat dong" : "Da bi khoa"
-            }</button></td>
-            <td><button class="search"><span class="material-symbols-outlined"> visibility </span> Chi tiết</button></td>
+            <td>
+                <button class="online">${
+                  users[i].status == "true" ? "Mở Khóa" : "Khóa"
+                }</button>
+                <button class="close">${
+                  users[i].status == "false" ? "Mở Khóa" : "Khóa"
+                }</button> 
+              </td>
         </tr>
     `;
   }
