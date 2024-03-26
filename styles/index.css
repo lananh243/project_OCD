@@ -122,3 +122,10 @@ hr{
     height: 100%;
 }
 
+#logined{
+    display: none;
+}
+
+#userName{
+    font-size: 14px;
+}

@@ -12,46 +12,60 @@ for (let i = 0; i < users.length; i++) {
 
 function render() {
   let text = "";
-  for(let i = 0 ; i < users.length ; i++){
-    if( checkLogin == users[i].id){
+  for (let i = 0; i < users.length; i++) {
+    if (checkLogin == users[i].id) {
       for (let j = 0; j < users[i].cart.length; j++) {
-          text += `
+        text += `
               <tr>
-                  <td>${j+1}</td>
+                  <td>${j + 1}</td>
                   <td>
-                      <img width="100px" src=${users[i].cart[j].image} alt="img" />
+                      <img width="100px" src=${
+                        users[i].cart[j].image
+                      } alt="img" />
                   </td>
                   <td>${users[i].cart[j].name}</td>
                   <td>${users[i].cart[j].price} ₫</td>
                   <td>
-                      <button onclick="decrease(${users[i].cart[j].id})">-</button>
+                      <button onclick="decrease(${
+                        users[i].cart[j].id
+                      })">-</button>
                       ${users[i].cart[j].quantity}
-                      <button onclick="increase(${users[i].cart[j].id})">+</button>
+                      <button onclick="increase(${
+                        users[i].cart[j].id
+                      })">+</button>
                   </td>
                   <td id='value${users[i].cart[j].id}'>
-                    ${(parseFloat(users[i].cart[j].price.replace(/\./g, '').replace(',', '.'))*users[i].cart[j].quantity).toLocaleString('vi-VN')}đ
+                    ${(
+                      parseFloat(
+                        users[i].cart[j].price
+                          .replace(/\./g, "")
+                          .replace(",", ".")
+                      ) * users[i].cart[j].quantity
+                    ).toLocaleString("vi-VN")}đ
                   </td>
               </tr>
               `;
-          }
-  }
- 
+      }
+    }
   }
   document.getElementById("cartBody").innerHTML = text;
 }
 render();
 function total() {
-  let count = 0
-for(let i = 0 ; i< myCart.length ; i++){
-  count += (parseFloat(myCart[i].price.replace(/\./g, '').replace(',', '.'))*myCart[i].quantity);
-}
+  let count = 0;
+  for (let i = 0; i < myCart.length; i++) {
+    count +=
+      parseFloat(myCart[i].price.replace(/\./g, "").replace(",", ".")) *
+      myCart[i].quantity;
+  }
 
-// console.log(count);
+  // console.log(count);
 
-text.innerHTML = 
-`
-  <td colspan="6" id="text" class="text">Total amount : ${count.toLocaleString('vi-VN')}đ</td>
-`
+  text.innerHTML = `
+  <td colspan="6" id="text" class="text">Tổng tiền : ${count.toLocaleString(
+    "vi-VN"
+  )}đ</td>
+`;
 }
 total();
 function increase(itemId) {
@@ -113,4 +127,3 @@ function decrease(itemId) {
     }
   }
 }
-

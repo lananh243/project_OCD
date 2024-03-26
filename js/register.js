@@ -16,7 +16,8 @@ function signUp(e) {
         password: `${password}`,
         receive: `${check}`,
         // status: `${boolean}`,
-        cart: []
+        cart: [],
+        status: "true",
     }
     let flag = true;
     for (let i = 0; i < users.length; i++) {

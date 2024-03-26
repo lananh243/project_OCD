@@ -1,6 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 table{
     margin: auto;
+    margin-top: 50px;
 }
 .text{
-    padding-left: 590px;
+   padding-left: 585px;
+}
+.pay{
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    background-color: red;
+    color: white;
+    border: 1px;
+}
+tr, th{
+    text-align: center;
+}
+button{
+    width: 15px;
 }

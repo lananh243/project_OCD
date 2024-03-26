@@ -138,3 +138,12 @@ th,td{
 a{
     text-decoration: none;
 }
+.offline {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-size: 23px;
+}
+.online{
+    font-size: 23px;
+}

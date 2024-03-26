@@ -108,16 +108,29 @@ function addToCart(productId) {
         khi đăng nhập thì mới cho mua
      */
   let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
+  let users = JSON.parse(localStorage.getItem("users"));
+
   if (checkLogin == null) {
     console.log("bạn phải đăng nhập để đi mua hàng");
     return; // gặp return dừng chương trình luôn
+  }
+  // kết hợp status user la true
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].id === checkLogin) {
+      console.log(8888, users[i].status);
+      if (users[i].status === false) {
+        console.log("tài khoản bị khóa");
+        return;
+      }
+      // Kết thúc vòng lặp sau khi tìm thấy user
+    }
   }
   console.log("đi mua hàng bình thường");
   /* 
         lấy giỏ hàng của user để đi mua hàng
         và lấy giỏ hàng user dựa vào id của user
      */
-  let users = JSON.parse(localStorage.getItem("users"));
+
   for (let i = 0; i < users.length; i++) {
     if (users[i].id == checkLogin) {
       //lấy thông tin sản phẩm để đưa vào giỏ hàng
@@ -186,3 +199,22 @@ function redirectToProductPage(id) {
   localStorage.setItem("product_select", JSON.stringify(product_select));
   window.location.href = "./pages/detail.html";
 }
+
+function logined() {
+  const user = document.getElementById("user");
+  const logined = document.getElementById("logined");
+  const userName = document.getElementById("userName");
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+  let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
+  for (let i = 0; i < users.length; i++) {
+    logined.style.display = "none";
+    user.style.display = "flex";
+    if (checkLogin === users[i].id) {
+      logined.style.display = "flex";
+      user.style.display = "none";
+      userName.innerHTML = `${users[i].lastName} ${users[i].firstName}`;
+      break;
+    }
+  }
+}
+logined();
